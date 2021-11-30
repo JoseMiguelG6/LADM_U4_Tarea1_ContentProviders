@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnLlamadasRecibidas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Llamadas Recibidas"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txtHistorialRecibidas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Historial Llamadas Recibidas"
+                android:textSize="16dp"
+                android:textAlignment="center"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnLlamadasRealizadas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Llamadas Realizadas"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txtHistorialRealizadas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Historial Llamadas Realizadas"
+                android:textSize="16dp"
+                android:textAlignment="center"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
